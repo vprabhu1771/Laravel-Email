@@ -1,0 +1,8 @@
+https://www.youtube.com/watch?v=kTcmbZqNiGw
+
+Login GMail -> Profile Pic -> Manage Your Google Account -> Security
+
+
+How you Sign In to Google -> 2-Step Verification -> Scroll Down to Bottom 
+
+App Password -> Create New App -> Test my app -> copy passcode

@@ -1,6 +1,0 @@
-php artisan make:controller InvoiceController
-
-
-https://github.com/barryvdh/laravel-dompdf
-
-composer require barryvdh/laravel-dompdf

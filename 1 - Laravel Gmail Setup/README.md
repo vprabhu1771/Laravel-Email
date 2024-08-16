@@ -1,0 +1,66 @@
+# Laravel Gmail Setup
+ 
+- Login GMail -> Profile Pic -> Manage Your Google Account -> Security
+
+
+- How you Sign In to Google -> 2-Step Verification -> Scroll Down to Bottom 
+
+- App Password -> Create New App -> Test my app -> copy passcode
+
+
+### `.env` setup for GMail
+
+Local Server `.env`
+
+```
+MAIL_MAILER=smtp
+
+MAIL_HOST=smtp.gmail.com
+
+MAIL_PORT=465
+
+MAIL_USERNAME="your email address"
+
+MAIL_PASSWORD="paste passcode"
+
+MAIL_ENCRYPTION=ssl
+
+MAIL_FROM_ADDRESS="hello@example.com"
+
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+
+Live Server `.env`
+
+Note: smtp working only localhost, Live Server Support sendmail
+
+```
+MAIL_MAILER=sendmail
+
+MAIL_HOST=sendmail.gmail.com
+
+MAIL_PORT=465
+
+MAIL_USERNAME="your email address"
+
+MAIL_PASSWORD="paste passcode"
+
+MAIL_ENCRYPTION=ssl
+
+MAIL_FROM_ADDRESS="hello@example.com"
+
+MAIL_FROM_NAME="${APP_NAME}"
+```
+
+Configuration: `config/mail.php`
+
+```
+'default' => env('MAIL_MAILER', 'smtp'),
+```
+
+Change To
+
+```
+'default' => env('MAIL_MAILER', 'sendmail'),
+```

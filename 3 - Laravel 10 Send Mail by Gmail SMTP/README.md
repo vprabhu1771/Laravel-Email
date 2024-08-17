@@ -2,13 +2,13 @@
 
 1. **Folder Setup**
 
-*Folder Setup*
+Folder Setup
 
 ```
 project_folder - resources -> views -> email
 ```
 
-*File Setup*
+File Setup
 
 ```
 project_folder - resources -> views -> email -> welcome_email.blade.php

@@ -1,12 +1,26 @@
 # Laravel 10 Send Mail by Gmail SMTP
- 
-1. **Generate Mail**
+
+1. **Folder Setup**
+
+*Folder Setup*
+
+```
+project_folder - resources -> views -> email
+```
+
+*File Setup*
+
+```
+project_folder - resources -> views -> email -> welcome.email.blade.php
+```
+
+2. **Generate Mail**
 
 ```
 php artisan make:mail WelcomeEmail
 ```
 
-2. **open** ` WelcomeEmail.php`
+3. **open** ` WelcomeEmail.php`
 
 ```
 <?php
@@ -67,7 +81,7 @@ class WelcomeEmail extends Mailable
     }
 }
 ```
-3. **open** `welcome_email.blade.php`
+4. **open** `welcome_email.blade.php`
 
 ```
 <!-- resources\views\email\welcome_email.blade.php -->
@@ -75,12 +89,12 @@ class WelcomeEmail extends Mailable
 {!! $body !!}
 ```
 
-4. **Generate WelcomeEmailController**
+5. **Generate WelcomeEmailController**
 ```
 php artisan make:controller WelcomeEmailController
 ```
 
-5. **open** `WelcomeEmailController.php`
+6. **open** `WelcomeEmailController.php`
 
 ```
 <?php
@@ -105,7 +119,7 @@ class WelcomeEmailController extends Controller
 
 ```
 
-6. **open** `web.php`
+7. **open** `web.php`
 
 Define a route in your web.php file:
 ```

@@ -11,7 +11,7 @@ project_folder - resources -> views -> email
 *File Setup*
 
 ```
-project_folder - resources -> views -> email -> welcome.email.blade.php
+project_folder - resources -> views -> email -> welcome_email.blade.php
 ```
 
 2. **Generate Mail**

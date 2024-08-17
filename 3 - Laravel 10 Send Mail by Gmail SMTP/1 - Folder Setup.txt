@@ -4,6 +4,6 @@ project_folder - resources -> views -> email
 
 File Setup
 
-project_folder - resources -> views -> frontend
+project_folder - resources -> views -> email
 
-welcome.email.blade.php
+welcome_email.blade.php

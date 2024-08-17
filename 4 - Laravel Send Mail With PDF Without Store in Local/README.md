@@ -1,16 +1,40 @@
 # Laravel Send Mail With PDF Without Store in Local
  
-https://github.com/barryvdh/laravel-dompdf
+[DOM PDF](https://github.com/barryvdh/laravel-dompdf)
 
+1. Install DOM PDF
 ```
 composer require barryvdh/laravel-dompdf
 ```
 
+1. **Folder Setup**
+
+Folder Setup
+
+```
+project_folder - resources -> views -> email
+```
+
+```
+project_folder - resources -> views -> pdf
+```
+
+File Setup
+
+```
+project_folder - resources -> views -> email -> invoice.blade.php
+```
+
+```
+project_folder - resources -> views -> pdf -> invoice.blade.php
+```
+
+3. Generate Invoice Controller
 ```
 php artisan make:controller InvoiceController
 ```
 
-3. open `InvoiceController.php`
+4. open `InvoiceController.php`
 
 ```
 <?php
@@ -48,7 +72,7 @@ class InvoiceController extends Controller
 }
 ```
 
-3. open `pdf/invoice.blade.php`
+5. open `pdf/invoice.blade.php`
 
 ```
 <!DOCTYPE html>
@@ -64,7 +88,7 @@ class InvoiceController extends Controller
 </html>
 ```
 
-4. open `email/invoice.blade.php`
+6. open `email/invoice.blade.php`
 
 ```
 <!DOCTYPE html>
@@ -81,7 +105,7 @@ class InvoiceController extends Controller
 ```
 
 
-5. open `web.php`
+7. open `web.php`
 
 ```
 use App\Http\Controllers\InvoiceController;

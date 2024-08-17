@@ -1,0 +1,15 @@
+Folder Setup
+
+project_folder - resources -> views -> email
+
+project_folder - resources -> views -> pdf
+
+File Setup
+
+project_folder - resources -> views -> email
+
+invoice.blade.php
+
+project_folder - resources -> views -> pdf
+
+invoice.blade.php
